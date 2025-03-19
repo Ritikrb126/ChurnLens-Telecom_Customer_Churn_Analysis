@@ -166,11 +166,48 @@ Here are some **ad-hoc** business questions answered using SQL:
  <img src="IMAGES/refferal.png" alt="email.png" width="400"/> &nbsp;
  
 ## 📊 Insights & Findings
-1️⃣ **Churn Rate**: `XX%`  
-2️⃣ **Top Churned Services**: `Streaming TV, Online Security`  
-3️⃣ **Highest Revenue Loss**: `Customers with Fiber Optic & Monthly Contracts`  
-4️⃣ **Customer Segmentation**: Younger customers with high usage churn more.  
-5️⃣ **Retention Strategies**: Discounts on long-term contracts, better customer support.
+# Churned Customer Profile 📊  
+
+## 1. Demographics  
+- **Age:** 50+ (50% of churned customers fall in this category)  
+- **Marital Status:** Most likely **single** (64% churned customers)  
+- **Dependents:** **No dependents** (94%)  
+
+## 2. Subscription & Service Details  
+- **Contract Type:** **Month-to-month contracts** (89% of churners)  
+- **Internet Service Type:** **Fiber optic** (70.4% churners), suggesting high expectations for speed and quality  
+- **Streaming & Data Usage:** Heavy users (56.6% churners had unlimited data and streaming services)  
+
+## 3. Behavioral & Satisfaction Factors  
+- **Churn Score:** **Above 60** (Highly likely to churn)  
+- **Satisfaction Score:** **Below 3 (100% churn rate)**  
+- **Referral Activity:** **66.6% did not refer service to friends**, indicating dissatisfaction  
+
+## 4. Geographical Trends  
+- **Location:** Most churners are from **San Diego & Los Angeles**  
+
+## 5. Promotional & Offer Response  
+- **Promotions Impact:**  
+  - **79% had no promotional offer or were on Offer E**  
+  - **Customers on Offer E churn within an average of 3 months**  
+
+## 6. Main Reasons for Churn  
+- 🚀 **Better competitor offers** with superior pricing & service quality  
+- 😠 **Poor customer support experience**  
+- ⏳ **Lack of long-term contracts leading to easier cancellations**  
+
+## 🎯 Key Takeaway  
+The typical churned customer is a **single, 50+ individual with no dependents**, using **fiber optic services on a month-to-month contract**. They are dissatisfied due to **customer support issues and better competitor offers**, leading them to **leave within 3-6 months**.  
+
+### 📌 **Retention Strategies**  
+✅ Improve **customer support** experience  
+✅ Offer **loyalty rewards & better pricing**  
+✅ Promote **long-term contracts** with benefits  
+✅ Target **high-churn locations (San Diego & Los Angeles)**  
+
+---
+🚀 **Use this profile to develop data-driven retention strategies and reduce churn!**  
+
 
 ## 📌 SQL Query Examples
 ```sql

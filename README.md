@@ -1,4 +1,3 @@
-# 
 # 📊 ChurnLens:Telecom Customer Attrition Analysis
 
 ## 📌 Overview
@@ -26,6 +25,64 @@ The dataset contains customer information, service usage, and churn status.
 - **Query Language:** SQL
 <img src="IMAGES/mysql logo.png" alt="mysql_img.png" width="200"/> &nbsp;
 
+### **1️⃣ Database Setup**
+- Created the **`telecom_customer`** database.
+- Designed multiple **normalized tables**:
+  - **`demographics`** → Customer details (age, gender, dependents).
+  - **`location`** → Customer location details.
+  - **`population`** → Population data linked via zip codes.
+  - **`status`** → Customer churn status and scores.
+  - **`services`** → Services subscribed, contract types, and financial details.
+
+```sql
+CREATE DATABASE telecom_customer;
+USE telecom_customer;
+```
+
+---
+
+### **2️⃣ Data Import & Verification**
+- Imported data into tables.
+- Ran `SELECT` queries to verify successful imports.
+- Checked for **duplicate records** to ensure data integrity.
+
+```sql
+SELECT Customer_ID, COUNT(*) AS duplicate_check
+FROM demographics 
+GROUP BY Customer_ID
+HAVING duplicate_check > 1;
+```
+
+✅ **Outcome:** No duplicate records were found.
+
+---
+
+### **3️⃣ Data Cleaning & Preprocessing**
+- **Checked for NULL values** in each table.
+- **Verified referential integrity** between tables.
+- **Dropped unnecessary columns** (e.g., redundant `count` columns).
+
+```sql
+ALTER TABLE demographics DROP COLUMN count;
+```
+
+✅ **Outcome:** Clean, structured dataset with accurate relationships.
+
+---
+
+### **4️⃣ Establishing Relationships (Foreign Keys)**
+- Defined **Foreign Key Constraints** to link tables and ensure **data consistency**.
+- Connected `Customer_ID` across multiple tables and `Zip_Code` for location validation.
+
+```sql
+ALTER TABLE telecom_customer.demographics
+ADD CONSTRAINT fk_demo_service_CustId
+FOREIGN KEY (Customer_ID) REFERENCES telecom_customer.services(Customer_ID);
+```
+
+✅ **Outcome:** All tables correctly linked, preventing orphan records.
+
+---
 
 ### 📊 General Customer Insights
 

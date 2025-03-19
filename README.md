@@ -1,4 +1,4 @@
-# 📊 ChurnLens:Telecom Customer Attrition Analysis
+# 📊 ChurnLens: Telecom Customer Attrition Analysis
 
 ## 📌 Overview
 Companies often use customer attrition analysis and customer attrition rates as one of their key business metrics (along with cash flow, EBITDA, etc.) because the cost of retaining an existing customer is far less than the cost of acquiring a new one.Hence, The process to analyze customer needs retention plays a significant part in improving the company's growth, protects loyal customers, and improve its customer relationship management (CRM). 
@@ -208,9 +208,17 @@ The typical churned customer is a **single, 50+ individual with no dependents**,
 ---
 🚀 **Use this profile to develop data-driven retention strategies and reduce churn!**  
 
+## 🤝 Contributing
+Feel free to contribute by improving queries, adding visualizations, or suggesting new analysis!
 
+## 📩 Contact
+📧 **Ritik Bhoyar**   
+🔗 **[GitHub Profile](https://github.com/Ritikrb126)**  
+
+---
 ## 📌 SQL Query Examples
 ```sql
 -- Overall Churn Rate
 SELECT ROUND((COUNT(CASE WHEN Customer_Status = 'Churned' THEN Customer_ID END) * 100.0) / COUNT(Customer_ID), 2) AS Churn_Rate
 FROM status;
+

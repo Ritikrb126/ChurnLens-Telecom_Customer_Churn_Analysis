@@ -83,42 +83,88 @@ FOREIGN KEY (Customer_ID) REFERENCES telecom_customer.services(Customer_ID);
 ✅ **Outcome:** All tables correctly linked, preventing orphan records.
 
 ---
-
+## 📌 Ad-hoc Business Questions & SQL Queries
+Here are some **ad-hoc** business questions answered using SQL:
 ### 📊 General Customer Insights
 
-🔹 **Total Number of Customers** – Find the total number of unique customers.  
-🔹 **Typical Tenure for Churned Customers** – Analyze tenure distribution among churners.  
+🔹 **Total Number of Customers** – Find the total number of unique customers. 
+
+ <img src="IMAGES/total_customer.png" alt="email.png" width="400"/> &nbsp;
+ 
+🔹 **Typical Tenure for Churned Customers** – Analyze tenure distribution among churners.
+
+ <img src="IMAGES/tenure.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Age Group with Higher Churn Rates** – Identify which age category experiences the highest churn.  
 
+ <img src="IMAGES/age_group.png" alt="email.png" width="400"/> &nbsp;
+ 
 ### 💰 Revenue & Financial Impact
 
 🔹 **Revenue Lost Due to Churn** – Calculate the percentage of total revenue lost to churned customers.  
 
+ <img src="IMAGES/revenue.png" alt="email.png" width="400"/> &nbsp;
+ 
 ### 📄 Churn Breakdown & Reasons
 
-🔹 **Churn Breakdown by Contract Type** – Analyze the churn rate for different contract durations.  
+🔹 **Churn Breakdown by Contract Type** – Analyze the churn rate for different contract durations.
+
+ <img src="IMAGES/contract.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Top 3 Reasons for Customer Churn** – Identify the most common reasons for customer attrition.  
 
+ <img src="IMAGES/reason.png" alt="email.png" width="400"/> &nbsp;
+ 
 ### 🌍 Location & Demographics
 
 🔹 **Cities with the Highest Churn Rates** – Find which cities have the most churners.  
+
+ <img src="IMAGES/city.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Are Churners Married?** – Investigate the marital status of churned customers.  
+
+ <img src="IMAGES/married.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Did Churners Have Dependents?** – Analyze how family status affects churn likelihood.  
 
+ <img src="IMAGES/dependents.png" alt="email.png" width="400"/> &nbsp;
+ 
 ### 📡 Services & Offers Impact on Churn
 
 🔹 **Offers Availed by Churned Customers** – Identify offers used by churned customers.  
-🔹 **Customer Tenure Based on Last Marketing Offer Accepted** – Compare tenure differences by offers.  
+
+ <img src="IMAGES/offer.png" alt="email.png" width="400"/> &nbsp;
+ 
+🔹 **Customer Tenure Based on Last Marketing Offer Accepted** – Compare tenure differences by offers. 
+
+ <img src="IMAGES/offertenure.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Internet Type Used by Churners** – Determine which internet service types had the most churn.  
-🔹 **Internet Type Among 'Competitor' Churners** – Analyze internet types used by customers lost to competitors.  
+
+ <img src="IMAGES/internet_type.png" alt="email.png" width="400"/> &nbsp;
+ 
+🔹 **Internet Type Among 'Competitor' Churners** – Analyze internet types used by customers lost to competitors. 
+
+ <img src="IMAGES/churn_category.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Most Common Additional Services Opted by Churned Customers** – Identify additional services frequently used by churners.  
 
+ <img src="IMAGES/services.png" alt="email.png" width="400"/> &nbsp;
+ 
 ### 📉 Customer Behavior & Risk Analysis
 
 🔹 **Average Churn Score & High-Risk Customers** – Calculate average churn scores and identify high-risk segments.  
+
+ <img src="IMAGES/churnscore.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Correlation Between Satisfaction Score & Churn Rate** – Determine if customer satisfaction impacts churn.  
+
+ <img src="IMAGES/satisfactionscore.png" alt="email.png" width="400"/> &nbsp;
+ 
 🔹 **Did Churners Refer a Friend?** – Analyze if referred customers have a lower churn rate.  
 
+ <img src="IMAGES/refferal.png" alt="email.png" width="400"/> &nbsp;
+ 
 ## 📊 Insights & Findings
 1️⃣ **Churn Rate**: `XX%`  
 2️⃣ **Top Churned Services**: `Streaming TV, Online Security`  

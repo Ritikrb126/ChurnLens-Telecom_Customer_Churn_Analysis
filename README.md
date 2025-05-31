@@ -1,7 +1,7 @@
-# 📊 ChurnLens: Telecom Customer Attrition Analysis
+# 📊 ChurnLens: Telecom Customer Churn Analysis
 
 ## 📌 Overview
-Companies often use customer attrition analysis and customer attrition rates as one of their key business metrics (along with cash flow, EBITDA, etc.) because the cost of retaining an existing customer is far less than the cost of acquiring a new one.Hence, The process to analyze customer needs retention plays a significant part in improving the company's growth, protects loyal customers, and improve its customer relationship management (CRM). 
+Companies often use customer churn analysis and customer churn rates as one of their key business metrics (along with cash flow, EBITDA, etc.) because the cost of retaining an existing customer is far less than the cost of acquiring a new one.Hence, The process to analyze customer needs retention plays a significant part in improving the company's growth, protects loyal customers, and improve its customer relationship management (CRM). 
  As a data analyst, my job is to provide an in-depth analysis of  Telecom’s churn dataset and to answer the following questions
 
 ## 🔍 Key Questions Answered
